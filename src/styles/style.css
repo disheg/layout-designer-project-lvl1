@@ -1,4 +1,16 @@
 /** CSS STYLE **/
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: 'Neucha';
+  src: url('./fonts/Neucha-Regular.ttf');
+}
+
 :root {
   --white: #fff;
   --translucent-white: #d7ccc0;
@@ -9,9 +21,10 @@
   --translucent-black: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+  --primary: #fe8a02;
 }
 
-* {
+.font {
   color: var(--black);
   font-size: 16px;
   font-family: Open Sans, sans-serif;
@@ -40,10 +53,82 @@ h3 {
   font-size: 34px;
 }
 
-section {
+.section {
   max-width: 1110px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 165px;
 
   text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+/*** Header ***/
+
+.section-bg::before {
+  position: absolute;
+
+  box-sizing: border-box;
+
+  width: 1440px;
+  height: 914px;
+
+  background-image: url('./images/background.png');
+  opacity: 0.06;
+
+  content: '';
+}
+
+.header-img {
+  position: absolute;
+
+  top: 55px;
+  right: -270px;
+
+  z-index: -10;
+
+  height: 525px;
+}
+
+.columns {
+  position: relative;
+
+  display: block;
+
+  text-align: left;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.columns p {
+  margin-top: 0;
+}
+
+.btn {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 148px;
+  height: 49px;
+
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+  text-transform: uppercase;
+
+  background-color: var(--primary);
+}
+
+.btn a {
+  color: var(--white);
+  text-decoration: none;
 }
