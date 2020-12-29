@@ -24,6 +24,9 @@
   --primary: #fe8a02;
 }
 
+.body {
+  margin: 0;
+}
 .font {
   color: var(--black);
   font-size: 16px;
@@ -53,11 +56,15 @@ h3 {
   font-size: 34px;
 }
 
-.section {
+.pos-r {
+  position: relative;
+}
+
+.container {
+  position: relative;
   max-width: 1110px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-left: 165px;
+  margin: auto;
+  padding: 100px 0;
 
   text-align: center;
 }
@@ -70,33 +77,40 @@ h3 {
   color: var(--primary);
 }
 
-/*** Header ***/
+.bg-white {
+  background-color: var(--white);
+}
 
 .section-bg::before {
   position: absolute;
-
-  box-sizing: border-box;
-
-  width: 1440px;
-  height: 914px;
-
-  background-image: url('./images/background.png');
-  opacity: 0.06;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("./images/background.png");
+  background-color: var(--light);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  
 
   content: '';
 }
+/*** Header ***/
 
-.header-img {
+
+.header-title {
   position: absolute;
-
-  top: 55px;
+}
+.header-img {
+  position: relative;
   right: -270px;
-
-  z-index: -10;
-
   height: 525px;
 }
 
+.header-body {
+  position: relative;
+}
 .columns {
   position: relative;
 
@@ -131,4 +145,11 @@ h3 {
 .btn a {
   color: var(--white);
   text-decoration: none;
+}
+
+/*** Main ***/
+
+.video {
+  margin-bottom: -100px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
