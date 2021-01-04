@@ -16,7 +16,7 @@
   --translucent-white: #d7ccc0;
   --light: #f5f4f0;
   --default: #42413c;
-  --default-black: #42413c;
+  --primary-dark: #42413c;
   --black: #2a2626;
   --translucent-black: #908d8b;
   --brown: #b09a81;
@@ -24,11 +24,17 @@
   --primary: #fe8a02;
 }
 
-.body {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
+
 .font {
   color: var(--black);
+  font-weight: normal;
   font-size: 16px;
   font-family: Open Sans, sans-serif;
   line-height: 1.6em;
@@ -40,7 +46,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Neucha, sans-serif;
+  font-weight: normal;
+  font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
@@ -56,17 +63,40 @@ h3 {
   font-size: 34px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.fs-52 {
+  font-size: 52px;
+}
+
+.wd-350 {
+  width: 350px;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.td-n {
+  text-decoration: none;
+}
+
+.ta-c {
+  text-align: center;
+}
+
 .pos-r {
   position: relative;
 }
 
 .container {
   position: relative;
+
   max-width: 1110px;
   margin: auto;
   padding: 100px 0;
-
-  text-align: center;
 }
 
 .align-left {
@@ -81,36 +111,44 @@ h3 {
   background-color: var(--white);
 }
 
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
 .section-bg::before {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("./images/background.png");
+
   background-color: var(--light);
+
+  background-image: url("./images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
-  
 
   content: '';
 }
-/*** Header ***/
 
+/*** Header ***/
 
 .header-title {
   position: absolute;
 }
+
 .header-img {
   position: relative;
   right: -270px;
+
   height: 525px;
 }
 
 .header-body {
   position: relative;
 }
+
 .columns {
   position: relative;
 
@@ -144,12 +182,55 @@ h3 {
 
 .btn a {
   color: var(--white);
-  text-decoration: none;
 }
 
 /*** Main ***/
 
 .video {
   margin-bottom: -100px;
+
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.card {
+  box-sizing: border-box;
+
+  width: 350px;
+  margin-bottom: 20px;
+  padding: 24px;
+
+  color: var(--default);
+
+  background-color: var(--light);
+}
+
+.card-title {
+  margin-bottom: 40px;
+
+  color: var(--primary-dark);
+
+  font-weight: normal;
+  font-size: 64px;
+  font-family: Neucha, cursive;
+  line-height: 1;
+}
+
+.card-body {
+  color: var(--primary);
+  font-size: 52px;
+}
+
+.card:hover {
+  background-color: var(--primary);
+}
+
+.card:hover * {
+  color: var(--white);
 }
