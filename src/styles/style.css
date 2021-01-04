@@ -40,6 +40,24 @@ p {
   line-height: 1.6em;
 }
 
+.font-neucha {
+  font-weight: normal;
+  font-family: Neucha, cursive;
+  line-height: 1;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-34 {
+  font-size: 34px;
+}
+
+.translucent-black {
+  color: var(--translucent-black);
+}
+
 h1,
 h2,
 h3,
@@ -67,8 +85,40 @@ a {
   text-decoration: none;
 }
 
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.col {
+  flex: 1 0 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .fs-52 {
   font-size: 52px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .wd-350 {
@@ -105,14 +155,6 @@ a {
 
 .primary {
   color: var(--primary);
-}
-
-.bg-white {
-  background-color: var(--white);
-}
-
-.bg-primary-dark {
-  background-color: var(--primary-dark);
 }
 
 .section-bg::before {
@@ -233,4 +275,22 @@ a {
 
 .card:hover * {
   color: var(--white);
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.subheader {
+  padding: 5px 0 5px 5px;
+
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background-color: var(--brown);
+}
+
+.container-footer {
+  margin-top: 20px;
 }
