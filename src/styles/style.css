@@ -113,6 +113,14 @@ a {
   font-size: 52px;
 }
 
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
 .mr-30 {
   margin-right: 30px;
 }
@@ -121,8 +129,16 @@ a {
   margin-top: 30px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mt-100 {
   margin-top: 100px;
+}
+
+.p-55 {
+  padding: 55px 0 55px 55px;
 }
 
 .wd-350 {
@@ -307,4 +323,58 @@ a {
 
 .container-footer {
   margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-subscribe {
+  display: flex;
+  margin: 100px 165px 0 165px;
+}
+
+.footer-form {
+  padding: 55px 55px 55px 55px;
+}
+
+.footer-input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 50px;
+
+  padding: 15px;
+
+  font-size: 18px;
+
+  background: #fff;
+  border: 1px solid #e3e3e3;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 70px;
+  height: 50px;
+  padding: 0;
+
+  background-color: var(--primary);
+
+  border: 0;
+}
+
+.form-btn::before {
+  content: url("./images/send.svg");
+}
+
+.footer-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+
+  font-size: 14px;
 }
