@@ -337,10 +337,8 @@ a {
 
 .footer-subscribe {
   display: flex;
-}
-
-.footer-form {
-  padding: 55px 55px 55px 55px;
+  align-items: center;
+  padding: 43px 75px 41px 52px;
 }
 
 .footer-input {
@@ -368,6 +366,12 @@ a {
   background-color: var(--primary);
 
   border: 0;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .form-btn::before {
