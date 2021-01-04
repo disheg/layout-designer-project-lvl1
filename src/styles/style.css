@@ -97,6 +97,10 @@ a {
   background-color: var(--light);
 }
 
+.bg-brown {
+  background-color: var(--brown);
+}
+
 .col {
   flex: 1 0 0;
 }
@@ -127,6 +131,14 @@ a {
 
 .text-white {
   color: var(--white);
+}
+
+.text-brown {
+  color: var(--brown);
+}
+
+.text-white-50 {
+  color: #D7CCC0;
 }
 
 .td-n {
@@ -287,8 +299,6 @@ a {
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-
-  background-color: var(--brown);
 }
 
 .container-footer {
