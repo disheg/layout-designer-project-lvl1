@@ -222,8 +222,6 @@ a {
 
 .header-title {
   position: relative;
-
-  margin-bottom: 194px;
 }
 
 .header-img {
@@ -234,18 +232,9 @@ a {
   height: 525px;
 }
 
-.columns {
-  position: relative;
-
-  display: block;
-
-  text-align: left;
-  column-count: 2;
-  column-gap: 20px;
-}
-
-.columns p {
-  margin-top: 0;
+.header-footer {
+  display: flex;
+  margin-top: 201px;
 }
 
 .btn {
