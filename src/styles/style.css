@@ -2,13 +2,13 @@
 @font-face {
   font-weight: 400; /* Соответствует значению normal */
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Regular.ttf');
+  src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
   font-weight: 400; /* Соответствует значению normal */
   font-family: 'Neucha';
-  src: url('./fonts/Neucha-Regular.ttf');
+  src: url('../fonts/Neucha-Regular.ttf');
 }
 
 :root {
@@ -130,7 +130,7 @@ h3 {
   bottom: 0;
   left: 0;
 
-  background-image: url("./images/background.png");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -348,12 +348,13 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
+
   width: 24px;
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
 
-  background-image: url(./images/send.svg);
+  background-image: url("../images/send.svg");
 
   content: "";
 }
