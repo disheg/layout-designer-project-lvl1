@@ -242,22 +242,26 @@ a {
   margin-bottom: 20px;
   padding: 5px 10px;
 
-  column-span: all;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2em;
   text-transform: uppercase;
+  column-span: all;
 }
 
 .container-footer {
-  columns: 2;
   margin-top: 20px;
+
   break-inside: avoid;
+
+  columns: 2;
   column-gap: 30px;
 }
+
 .container-footer p:first-of-type {
   break-after: column;
 }
+
 .footer {
   width: 1110px;
   margin: auto;
@@ -267,7 +271,10 @@ a {
 .footer-subscribe {
   display: flex;
   align-items: center;
-  padding: 43px 75px 41px 52px;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 40px 55px;
 }
 
 .footer-input {
@@ -277,24 +284,32 @@ a {
 
   padding: 15px;
 
-  font-size: 18px;
+  font-size: 13px;
 
   background: #fff;
   border: 1px solid #e3e3e3;
 }
 
-.form-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.form-link {
+  color: inherit;
+  text-decoration: underline;
 
-  min-width: 70px;
+  transition: 0.2s;
+}
+
+.form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 62px;
   height: 50px;
-  padding: 0;
 
   background-color: var(--primary);
-
   border: 0;
+  cursor: pointer;
+
+  transition: 0.2s;
 }
 
 .form {
@@ -303,8 +318,27 @@ a {
   width: 100%;
 }
 
+.form-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
 .form-btn::before {
-  content: url("./images/send.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  margin-left: -12px;
+
+  background-image: url(./images/send.svg);
+
+  content: "";
 }
 
 .footer-information {
@@ -354,6 +388,10 @@ a {
 
 .mt-40 {
   margin-top: 40px;
+}
+
+.mt-16 {
+  margin-top: 16px;
 }
 
 .mb-16 {
