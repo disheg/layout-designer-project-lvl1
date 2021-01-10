@@ -297,21 +297,6 @@ a {
   transition: 0.2s;
 }
 
-.form-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 62px;
-  height: 50px;
-
-  background-color: var(--primary);
-  border: 0;
-  cursor: pointer;
-
-  transition: 0.2s;
-}
-
 .form {
   display: flex;
   align-items: center;
@@ -324,6 +309,21 @@ a {
   margin-bottom: 10px;
 
   font-size: 18px;
+}
+
+.form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 70px;
+  height: 50px;
+
+  background-color: var(--primary);
+  border: 0;
+  cursor: pointer;
+
+  transition: 0.2s;
 }
 
 .form-btn::before {
