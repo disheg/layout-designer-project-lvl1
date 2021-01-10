@@ -27,7 +27,8 @@
 body,
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
@@ -240,21 +241,17 @@ a {
 }
 
 .subheader {
-  margin-bottom: 20px;
   padding: 5px 10px;
 
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2em;
   text-transform: uppercase;
-  column-span: all;
 }
 
 .container-footer {
-  margin-top: 20px;
-
   columns: 2;
-  column-gap: 30px;
+  margin-top: 20px;
 }
 
 .footer {
@@ -357,10 +354,6 @@ a {
 
 .mb-16 {
   margin-bottom: 16px;
-}
-
-.mb-0 {
-  margin-bottom: 0;
 }
 
 .mt-0 {
