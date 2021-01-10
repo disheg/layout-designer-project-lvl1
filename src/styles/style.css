@@ -239,8 +239,10 @@ a {
 }
 
 .subheader {
+  margin-bottom: 20px;
   padding: 5px 10px;
 
+  column-span: all;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2em;
@@ -250,8 +252,12 @@ a {
 .container-footer {
   columns: 2;
   margin-top: 20px;
+  break-inside: avoid;
+  column-gap: 30px;
 }
-
+.container-footer p:first-of-type {
+  break-after: column;
+}
 .footer {
   width: 1110px;
   margin: auto;
