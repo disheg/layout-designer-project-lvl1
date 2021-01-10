@@ -60,6 +60,10 @@ h3 {
   color: var(--translucent-black);
 }
 
+.color-white {
+  color: var(--white);
+}
+
 h1,
 h2,
 h3,
@@ -320,7 +324,7 @@ a {
 .form-label {
   display: block;
 
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 
   font-size: 18px;
 }
@@ -329,14 +333,11 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-
   width: 70px;
   height: 50px;
-
   background-color: var(--primary);
   border: 0;
   cursor: pointer;
-
   transition: 0.2s;
 }
 
@@ -344,22 +345,23 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 24px;
   height: 24px;
   margin-top: -12px;
   margin-left: -12px;
-
   background-image: url(./images/send.svg);
-
   content: "";
 }
 
 .footer-information {
-  margin-top: 74px;
+  margin: 74px 0 0;
 
   font-size: 14px;
   text-align: center;
+}
+
+.footer-information a {
+  color: #1085c5;
 }
 
 .link {
