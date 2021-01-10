@@ -205,6 +205,7 @@ a {
 }
 
 .card-title {
+  display: block;
   margin-bottom: 40px;
 
   color: var(--primary-dark);
@@ -218,6 +219,10 @@ a {
 .card-body {
   color: var(--primary);
   font-size: 52px;
+}
+
+.card-footer {
+  margin-bottom: 0;
 }
 
 .card:hover {
